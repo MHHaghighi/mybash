@@ -1,5 +1,6 @@
 format = """
 [](#3B4252)\
+$python\
 $os\
 $username\
 [](bg:#434C5E fg:#3B4252)\
@@ -135,6 +136,10 @@ format = '[ $symbol ($version) ]($style)'
 symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
+
+[python]
+style = "bg:#3B4252"
+format = '[(\($virtualenv\) )]($style)'
 
 [rust]
 symbol = ""
