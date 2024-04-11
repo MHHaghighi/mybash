@@ -1,6 +1,6 @@
 format = """
 [](#3B4252)\
-$python\
+$os\
 $username\
 [](bg:#434C5E fg:#3B4252)\
 $directory\
@@ -27,7 +27,30 @@ $time\
 command_timeout = 5000
 # Disable the blank line at the start of the prompt
 # add_newline = false
+[os]
+disabled = false
+style = "bg:#3B4252"
 
+[os.symbols]
+Windows = "󰍲 "
+Ubuntu = "󰕈 "
+SUSE = " "
+Raspbian = "󰐿 "
+Mint = "󰣭 "
+Macos = "󰀵 "
+Manjaro = " "
+Linux = "󰌽 "
+Gentoo = "󰣨 "
+Fedora = "󰣛 "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = "󰣇 "
+Artix = "󰣇 "
+CentOS = " "
+Debian = "󰣚 "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
@@ -112,10 +135,6 @@ format = '[ $symbol ($version) ]($style)'
 symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
-
-[python]
-style = "bg:#3B4252"
-format = '[(\($virtualenv\) )]($style)'
 
 [rust]
 symbol = ""
